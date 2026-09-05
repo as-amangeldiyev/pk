@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff5eb"/>
+      <stop offset="100%" stop-color="#ffe4ec"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="500" fill="url(#bg2)"/>
+  <!-- Jäger bottle outline -->
+  <rect x="200" y="140" width="100" height="180" rx="14" fill="#1b382b" stroke="#2e5a3c" stroke-width="5"/>
+  <rect x="232" y="115" width="36" height="25" rx="4" fill="#c28834"/>
+  <rect x="215" y="190" width="70" height="90" rx="6" fill="#e8a735"/>
+  <!-- Deer head / Stag text -->
+  <text x="250" y="235" font-family="sans-serif" font-size="28" text-anchor="middle">🦌</text>
+  <text x="250" y="260" font-family="sans-serif" font-weight="900" font-size="11" fill="#1b382b" text-anchor="middle">-18°C JÄGER</text>
+  <!-- Ice cubes -->
+  <rect x="130" y="260" width="45" height="45" rx="8" fill="#e0f2fe" stroke="#38bdf8" stroke-width="2" transform="rotate(-15 152 282)"/>
+  <rect x="325" y="250" width="45" height="45" rx="8" fill="#e0f2fe" stroke="#38bdf8" stroke-width="2" transform="rotate(20 347 272)"/>
+  <text x="250" y="390" font-family="-apple-system, sans-serif" font-weight="900" font-size="28" fill="#b45309" text-anchor="middle">ICE COLD PROST 🥃</text>
+  <text x="250" y="425" font-family="-apple-system, sans-serif" font-weight="600" font-size="16" fill="#7c6270" text-anchor="middle">Replace with assets/photos/photo2.jpg</text>
+</svg>

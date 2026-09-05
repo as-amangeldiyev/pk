@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff0f5"/>
+      <stop offset="100%" stop-color="#fed7aa"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="500" fill="url(#bg3)"/>
+  <!-- Folder & Cap -->
+  <rect x="160" y="160" width="180" height="130" rx="10" fill="#ffffff" stroke="#f43f5e" stroke-width="5"/>
+  <polygon points="250,130 180,165 250,200 320,165" fill="#1f2937"/>
+  <rect x="245" y="165" width="10" height="40" fill="#f59e0b"/>
+  <!-- Stamp -->
+  <rect x="230" y="210" width="90" height="35" rx="5" fill="#ef4444" transform="rotate(-10 275 227)"/>
+  <text x="275" y="233" font-family="sans-serif" font-weight="900" font-size="12" fill="#ffffff" text-anchor="middle" transform="rotate(-10 275 227)">ADMITTED</text>
+  <text x="250" y="390" font-family="-apple-system, sans-serif" font-weight="900" font-size="26" fill="#e11d48" text-anchor="middle">ADMISSIONS CREW 🎓</text>
+  <text x="250" y="425" font-family="-apple-system, sans-serif" font-weight="600" font-size="16" fill="#7c6270" text-anchor="middle">Replace with assets/photos/photo3.jpg</text>
+</svg>

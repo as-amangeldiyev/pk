@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amelie ✨ | 10 Reasons to Love Amelie, Good Vibes & Jäger</title>
+  
+  <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Playfair+Display:ital,wght@0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Floating Background Elements -->
+  <div class="bg-decorations" aria-hidden="true">
+    <div class="float-icon" style="top: 12%; left: 8%; font-size: 3rem;">🏐</div>
+    <div class="float-icon" style="top: 25%; right: 12%; font-size: 2.6rem; animation-delay: -3s;">🦌</div>
+    <div class="float-icon" style="top: 55%; left: 5%; font-size: 2.2rem; animation-delay: -7s;">🥃</div>
+    <div class="float-icon" style="top: 70%; right: 8%; font-size: 3.2rem; animation-delay: -5s;">💖</div>
+    <div class="float-icon" style="top: 85%; left: 18%; font-size: 2.8rem; animation-delay: -11s;">🏐</div>
+    <div class="float-icon" style="top: 40%; right: 22%; font-size: 2.4rem; animation-delay: -9s;">✨</div>
+  </div>
+
+  <!-- Confetti Canvas for Celebrations -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+      <a href="#" class="nav-brand">
+        <span class="brand-icon">💖</span>
+        <span>AMELIE<span style="color: var(--pink-500);">.VIP</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#reasons-section" class="nav-link">Top 10 Reasons 💖</a></li>
+          <li><a href="#photos-section" class="nav-link">Photos 📸</a></li>
+          <li><a href="#videos-section" class="nav-link">Videos 📱</a></li>
+          <li><a href="#games-section" class="nav-link">Arcade 🕹️</a></li>
+          <li><a href="#dossier-section" class="nav-link">Dossier 📂</a></li>
+          <li><a href="#scratch-section" class="nav-link">Secret Note 💌</a></li>
+        </ul>
+      </nav>
+
+      <!-- Audio Toggle Button (Web Audio API Synthesizer) -->
+      <button id="audio-toggle-btn" class="audio-toggle" title="Toggle audio effects">
+        <span>🔊</span> Sound: ON
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Quick Sub-Navigation (Visible on Phones) -->
+  <nav class="mobile-subnav" aria-label="Mobile quick navigation">
+    <a href="#reasons-section" class="mobile-nav-chip">💖 Top 10</a>
+    <a href="#photos-section" class="mobile-nav-chip">📸 Photos</a>
+    <a href="#videos-section" class="mobile-nav-chip">📱 Videos</a>
+    <a href="#games-section" class="mobile-nav-chip">🕹️ Arcade</a>
+    <a href="#dossier-section" class="mobile-nav-chip">📂 Dossier</a>
+    <a href="#scratch-section" class="mobile-nav-chip">💌 Note</a>
+  </nav>
+
+  <main>
+    <!-- ============================================================== -->
+    <!-- HERO SECTION                                                   -->
+    <!-- ============================================================== -->
+    <section class="hero">
+      <div class="container">
+        <div class="badge-tag">
+          <span>✨</span> Certified Legend & Good Vibes Only
+        </div>
+
+        <h1 class="hero-title">
+          The Official <span class="highlight-gradient">Amelie</span> Appreciation Zone
+        </h1>
+
+        <p class="hero-subtitle">
+          Dedicated to endless laughs, ice-cold Jägermeister toasts (-18°C), 
+          surviving admissions chaos together, and celebrating the one and only Amelie!
+        </p>
+
+        <!-- Personality Highlight Tags -->
+        <div class="hero-pills">
+          <span class="pill-tag">💖 Top 10 Reasons Why We Love Her</span>
+          <span class="pill-tag">🦌 Jägermeister Connoisseur (-18°C)</span>
+          <span class="pill-tag">🎓 KBTU Admissions Legend</span>
+          <span class="pill-tag">🏐 Volleyball Lover</span>
+          <span class="pill-tag">⚡ 100% Good Times & Chaos</span>
+        </div>
+
+        <!-- Call to Action Buttons -->
+        <div class="hero-cta-group">
+          <a href="#reasons-section" class="btn btn-primary">
+            <span>💖</span> Top 10 Reasons to Love Amelie
+          </a>
+          <a href="#photos-section" class="btn btn-secondary">
+            <span>📸</span> View Photos
+          </a>
+          <a href="#videos-section" class="btn btn-secondary">
+            <span>📱</span> Watch Videos
+          </a>
+          <a href="#games-section" class="btn btn-secondary">
+            <span>🕹️</span> Play Games
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- TOP 10 REASONS WHY TO LOVE AMELIE                              -->
+    <!-- ============================================================== -->
+    <section id="reasons-section" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Endless Appreciation</span>
+          <h2 class="section-title">Top 10 Reasons to Love Amelie 💖</h2>
+          <p class="section-desc">
+            A peer-reviewed, undeniable breakdown of why Amelie is officially the greatest friend to have in your corner.
+          </p>
+        </div>
+
+        <div class="reasons-grid">
+          <!-- Reason 1 -->
+          <div class="reason-card">
+            <div class="reason-top-row">
+              <span class="reason-badge">#01</span>
+              <span class="reason-icon">⚡</span>
+            </div>
+            <h3 class="reason-title">Unmatched Energy</h3>
+            <p class="reason-desc">
+              Whether stepping into a party limousine or walking into a casual hangout, she immediately boosts the room's mood by 200%.
+            </p>
+            <div class="reason-action-row">
+              <button class="reason-love-btn" data-count="42">💖 <span>42</span></button>
+            </div>
+          </div>
+
+          <!-- Reason 2 -->
+          <div class="reason-card">
+            <div class="reason-top-row">
+              <span class="reason-badge">#02</span>
+              <span class="reason-icon">🦌</span>
+            </div>
+            <h3 class="reason-title">Jägermeister Connoisseur</h3>
+            <p class="reason-desc">
+              She respects the craft: exactly -18°C, 56 botanicals, and toasts that turn any ordinary evening into an unforgettable memory.
+            </p>
+            <div class="reason-action-row">
+              <button class="reason-love-btn" data-count="38">💖 <span>38</span></button>
+            </div>
+          </div>
+
+          <!-- Reason 3 -->
+          <div class="reason-card">
+            <div class="reason-top-row">
+              <span class="reason-badge">#03</span>
+              <span class="reason-icon">🤝</span>
+            </div>
+            <h3 class="reason-title">The Ultimate Ride-or-Die</h3>
+            <p class="reason-desc">
+              On the court, at work, or during deep chats on the gym bleachers, she always shows up with loyalty and genuine care.
+            </p>
+            <div class="reason-action-row">
+              <button class="reason-love-btn" data-count="56">💖 <span>56</span></button>
+            </div>
+          </div>
+
+          <!-- Reason 4 -->
+          <div class="reason-card">
+            <div class="reason-top-row">
+              <span class="reason-badge">#04</span>
+              <span class="reason-icon">🎓</span>
+            </div>
+            <h3 class="reason-title">Admissions Hallway Legend</h3>
+            <p class="reason-desc">
+              Surviving the KBTU admissions desk chaos without losing her cool or sense of humor is a superpower few humans possess.
+            </p>
+            <div class="reason-action-row">
+              <button class="reason-love-btn" data-count="47">💖 <span>47</span></button>
+            </div>
+          </div>
+
+          <!-- Reason 5 -->
+          <div class="reason-card">
+            <div class="reason-top-row">
+              <span class="reason-badge">#05</span>
+              <span class="reason-icon">✨</span>
+            </div>
+            <h3 class="reason-title">Effortlessly Iconic Style</h3>
+            <p class="reason-desc">
+              Looks iconic whether she's rocking athletic gear in the gym or dressed up in black for a night out on the town.
+            </p>
+            <div class="reason-action-row">
+              <button class="reason-love-btn" data-count="61">💖 <span>61</span></button>
+            </div>
+          </div>
+
+          <!-- Reason 6 -->
+          <div class="reason-card">
+            <div class="reason-top-row">
+              <span class="reason-badge">#06</span>
+              <span class="reason-icon">😂</span>
+            </div>
+            <h3 class="reason-title">100% Contagious Laughter</h3>
+            <p class="reason-desc">
+              Her facial expressions, candid jokes, and spontaneous reactions make even the most exhausting days completely hilarious.
+            </p>
+            <div class="reason-action-row">
+              <button class="reason-love-btn" data-count="53">💖 <span>53</span></button>
+            </div>
+          </div>
+
+          <!-- Reason 7 -->
+          <div class="reason-card">
+            <div class="reason-top-row">
+              <span class="reason-badge">#07</span>
+              <span class="reason-icon">📸</span>
+            </div>
+            <h3 class="reason-title">Never Forgets Her People</h3>
+            <p class="reason-desc">
+              Taking the time to recreate childhood school desk photos years later shows how much she treasures real friendship and memories.
+            </p>
+            <div class="reason-action-row">
+              <button class="reason-love-btn" data-count="49">💖 <span>49</span></button>
+            </div>
+          </div>
+
+          <!-- Reason 8 -->
+          <div class="reason-card">
+            <div class="reason-top-row">
+              <span class="reason-badge">#08</span>
+              <span class="reason-icon">💬</span>
+            </div>
+            <h3 class="reason-title">The Queen of Video Circles</h3>
+            <p class="reason-desc">
+              Her Telegram video messages from the gym floor or wherever she is are always raw, funny, and 100% authentic.
+            </p>
+            <div class="reason-action-row">
+              <button class="reason-love-btn" data-count="39">💖 <span>39</span></button>
+            </div>
+          </div>
+
+          <!-- Reason 9 -->
+          <div class="reason-card">
+            <div class="reason-top-row">
+              <span class="reason-badge">#09</span>
+              <span class="reason-icon">🏐</span>
+            </div>
+            <h3 class="reason-title">Sports Spirit with Zero Ego</h3>
+            <p class="reason-desc">
+              Loves jumping into a volleyball match for the pure joy of the game, laughing through the drills, and cheering on her friends.
+            </p>
+            <div class="reason-action-row">
+              <button class="reason-love-btn" data-count="44">💖 <span>44</span></button>
+            </div>
+          </div>
+
+          <!-- Reason 10 -->
+          <div class="reason-card">
+            <div class="reason-top-row">
+              <span class="reason-badge">#10</span>
+              <span class="reason-icon">👑</span>
+            </div>
+            <h3 class="reason-title">Simply 1 of 1 (Irreplaceable)</h3>
+            <p class="reason-desc">
+              You could look across the whole university, city, or planet—there is genuinely nobody quite like Amelie. A certified legend.
+            </p>
+            <div class="reason-action-row">
+              <button class="reason-love-btn" data-count="100">💖 <span>100</span></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Love Counter Banner -->
+        <div class="love-banner">
+          <div class="love-counter-display">
+            Total Love Sent to Amelie: <span id="total-love-count">529</span> 💖
+          </div>
+          <p style="color: var(--text-muted); font-size: 0.9rem;">
+            Click the hearts above or tap the button below to shower Amelie with love!
+          </p>
+          <button class="btn btn-primary" id="mega-love-btn">
+            <span>💖</span> Send Mega Love Burst (+10 Love)
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- MINI-GAMES SECTION: UNLOCK EXCLUSIVE MEDIA & BADGES            -->
+    <!-- ============================================================== -->
+    <section id="games-section" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Interactive Arcade</span>
+          <h2 class="section-title">Play to Unlock Amelie's Vault</h2>
+          <p class="section-desc">
+            Score points on the volleyball court or pour the ultimate chilled Jägermeister 
+            to reveal hidden photos, videos, and achievements!
+          </p>
+        </div>
+
+        <div class="games-grid">
+          <!-- GAME 1: Volleyball Spike Arcade -->
+          <div class="game-card" id="volleyball-section">
+            <div class="game-header">
+              <span class="game-badge">Game #1 • Sports</span>
+              <span style="font-size: 1.4rem;">🏐</span>
+            </div>
+
+            <h3 class="game-title">Volleyball Court Rally</h3>
+            <p class="game-instruction">
+              Wait for the indicator to enter the <strong>GREEN Sweet Spot</strong>, 
+              then hit <strong>SERVE / HIT</strong> to keep the rally alive across the court!
+            </p>
+
+            <!-- Court Simulation Box -->
+            <div class="volleyball-court">
+              <div class="court-net"></div>
+              
+              <!-- Player Avatar -->
+              <div class="court-player" id="court-player">
+                <div class="player-avatar">👱‍♀️</div>
+                <div style="font-size: 0.7rem; font-weight: 800; color: #f43f5e; background: white; padding: 1px 6px; border-radius: 6px;">AMELIE</div>
+              </div>
+
+              <!-- Volleyball -->
+              <div class="court-ball" id="court-ball">🏐</div>
+            </div>
+
+            <!-- Timing Bar -->
+            <div class="timing-bar-wrapper">
+              <div class="timing-labels">
+                <span>Too Early</span>
+                <span style="color: #22c55e;">SWEET SPOT (Good Timing)</span>
+                <span>Too Late</span>
+              </div>
+              <div class="timing-track">
+                <div class="timing-sweetspot"></div>
+                <div class="timing-indicator" id="timing-indicator"></div>
+              </div>
+            </div>
+
+            <!-- Game Status & Score -->
+            <div id="volleyball-status" style="text-align: center; font-weight: 700; margin-bottom: 12px; min-height: 24px; color: var(--pink-600);">
+              Hit the ball when the bar is in the green zone!
+            </div>
+
+            <!-- Controls -->
+            <div class="game-controls">
+              <button class="spike-btn" id="spike-btn">
+                <span>🏐</span> HIT BALL! (Space)
+              </button>
+              <div class="score-display">
+                <span style="font-size: 0.75rem; display: block; color: var(--text-muted); font-weight: 600;">POINTS</span>
+                <span id="volleyball-score">0</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- GAME 2: The Perfect Jägermeister Pour -->
+          <div class="game-card">
+            <div class="game-header">
+              <span class="game-badge" style="background: #e8f5e9; color: #1b5e20;">Game #2 • Party</span>
+              <span style="font-size: 1.4rem;">🦌</span>
+            </div>
+
+            <h3 class="game-title">The -18°C Jäger Pour</h3>
+            <p class="game-instruction">
+              Amelie loves her Jägermeister ice-cold. <strong>Hold down the button</strong> 
+              to pour, and release exactly inside the <strong>PERFECT SHOT</strong> line!
+            </p>
+
+            <!-- Bar Pour Station -->
+            <div class="jager-station">
+              <!-- Frosted Jäger Bottle -->
+              <div class="jager-bottle-wrapper" id="jager-bottle">
+                <div class="jager-bottle-graphic">
+                  <div class="jager-cap"></div>
+                  <div class="jager-label">
+                    <span>🦌</span>
+                    <span style="font-size: 0.45rem; letter-spacing: 0.5px;">JÄGER</span>
+                    <span style="font-size: 0.4rem; color: #b25000;">56 HERBS</span>
+                  </div>
+                  <div class="jager-stream"></div>
+                </div>
+              </div>
+
+              <!-- Shot Glass -->
+              <div class="shot-glass-container">
+                <div class="perfect-zone-marker">PERFECT SHOT</div>
+                <div class="jager-liquid" id="jager-liquid"></div>
+              </div>
+            </div>
+
+            <div class="pour-status" id="jager-status">
+              Hold the button to pour the shot!
+            </div>
+
+            <!-- Pour Controls -->
+            <div class="game-controls" style="margin-top: 14px;">
+              <button class="pour-btn" id="pour-btn">
+                <span>🥃</span> HOLD TO POUR JÄGER
+              </button>
+              <button class="btn btn-secondary" id="jager-reset-btn" style="padding: 14px; border-radius: 30px;" title="Empty glass and try again">
+                🔄 Reset
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- UNLOCKED REWARDS SHELF -->
+        <div class="unlock-shelf">
+          <div class="shelf-title">
+            <h4><span>🏆</span> Unlocked Vault Trophies & Media</h4>
+            <button class="instant-unlock-btn" id="unlock-all-btn">
+              ⚡ Instant Unlock All (No wait!)
+            </button>
+          </div>
+
+          <div class="rewards-row">
+            <!-- Reward 1: Volleyball Photo -->
+            <div class="reward-card locked" id="reward-vb-1" data-unlock-target="photo-slot-1">
+              <div class="lock-badge">🔒</div>
+              <div class="reward-name">Court Ace Photo</div>
+              <div class="reward-desc">Scored 1+ Volleyball Point</div>
+              <span class="reward-status" style="font-size: 0.75rem; font-weight: 800; color: var(--pink-500); display: block; margin-top: 6px;">LOCKED</span>
+            </div>
+
+            <!-- Reward 2: Volleyball Video -->
+            <div class="reward-card locked" id="reward-vb-2" data-unlock-target="video-slot-1">
+              <div class="lock-badge">🔒</div>
+              <div class="reward-name">Gym Court Video 🏐</div>
+              <div class="reward-desc">Scored 3+ Volleyball Points</div>
+              <span class="reward-status" style="font-size: 0.75rem; font-weight: 800; color: var(--pink-500); display: block; margin-top: 6px;">LOCKED</span>
+            </div>
+
+            <!-- Reward 3: MVP Badge -->
+            <div class="reward-card locked" id="reward-vb-3">
+              <div class="lock-badge">🔒</div>
+              <div class="reward-name">Admissions MVP Whistle</div>
+              <div class="reward-desc">Scored 5+ Volleyball Points</div>
+              <span class="reward-status" style="font-size: 0.75rem; font-weight: 800; color: var(--pink-500); display: block; margin-top: 6px;">LOCKED</span>
+            </div>
+
+            <!-- Reward 4: Jäger Photo -->
+            <div class="reward-card locked" id="reward-jg-1" data-unlock-target="photo-slot-2">
+              <div class="lock-badge">🔒</div>
+              <div class="reward-name">Party Master Photo</div>
+              <div class="reward-desc">Poured the Perfect Shot</div>
+              <span class="reward-status" style="font-size: 0.75rem; font-weight: 800; color: var(--pink-500); display: block; margin-top: 6px;">LOCKED</span>
+            </div>
+
+            <!-- Reward 5: Jäger Video -->
+            <div class="reward-card locked" id="reward-jg-2" data-unlock-target="video-slot-2">
+              <div class="lock-badge">🔒</div>
+              <div class="reward-name">Celebration Video</div>
+              <div class="reward-desc">Mastered the 56 Herbs</div>
+              <span class="reward-status" style="font-size: 0.75rem; font-weight: 800; color: var(--pink-500); display: block; margin-top: 6px;">LOCKED</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SQUARE PHOTO SCRAPBOOK (1:1 ASPECT RATIO)                      -->
+    <!-- ============================================================== -->
+    <section id="photos-section" class="section" style="background: rgba(255, 255, 255, 0.65);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Polaroid & Memories</span>
+          <h2 class="section-title">Square Photo Scrapbook</h2>
+          <p class="section-desc">
+            All photos are framed in an exact 1:1 square ratio. Drop your photos into 
+            <code>assets/photos/</code> or click to expand!
+          </p>
+        </div>
+
+        <div class="photo-wall">
+
+          <!-- ============================================================== -->
+          <!-- 📸 PHOTO SLOT 1 (1:1 SQUARE)                                  -->
+          <!-- FILE: assets/photos/photo1.jpg                                 -->
+          <!-- ============================================================== -->
+          <div class="photo-card" id="photo-slot-1">
+            <div class="photo-tape"></div>
+            <div class="square-frame">
+              <img id="photo-img-1" src="assets/photos/photo1.jpg" alt="Amelie in Volleyball Gear" />
+            </div>
+            <div class="photo-caption">
+              <h5>Volleyball Court Ready 🏐</h5>
+              <p>Knee pads on, game face ready. The volleyball court belongs to Amelie!</p>
+            </div>
+          </div>
+
+          <!-- ============================================================== -->
+          <!-- 📸 PHOTO SLOT 2 (1:1 SQUARE)                                  -->
+          <!-- FILE: assets/photos/photo2.jpg                                 -->
+          <!-- ============================================================== -->
+          <div class="photo-card" id="photo-slot-2">
+            <div class="photo-tape"></div>
+            <div class="square-frame">
+              <img id="photo-img-2" src="assets/photos/photo2.jpg" alt="Limo Night Out" />
+            </div>
+            <div class="photo-caption">
+              <h5>Limo Royalty & Night Out ✨</h5>
+              <p>Party lights, immaculate vibes, and unmatched Amelie energy.</p>
+            </div>
+          </div>
+
+          <!-- ============================================================== -->
+          <!-- 📸 PHOTO SLOT 3 (1:1 SQUARE)                                  -->
+          <!-- FILE: assets/photos/photo3.jpg                                 -->
+          <!-- ============================================================== -->
+          <div class="photo-card" id="photo-slot-3">
+            <div class="photo-tape"></div>
+            <div class="square-frame">
+              <img id="photo-img-3" src="assets/photos/photo3.jpg" alt="KBTU Admissions Hallway" style="transform: rotate(270deg);" />
+            </div>
+            <div class="photo-caption">
+              <h5>KBTU Admissions Days (ПК 2026) 🎓</h5>
+              <p>Surviving applicant season together in the iconic hallway.</p>
+            </div>
+          </div>
+
+          <!-- ============================================================== -->
+          <!-- 📸 PHOTO SLOT 4 (1:1 SQUARE)                                  -->
+          <!-- FILE: assets/photos/photo4.jpg                                 -->
+          <!-- ============================================================== -->
+          <div class="photo-card" id="photo-slot-4">
+            <div class="photo-tape"></div>
+            <div class="square-frame">
+              <img id="photo-img-4" src="assets/photos/photo4.jpg" alt="The Throwback Desk Duo" style="transform: rotate(270deg)" />
+            </div>
+            <div class="photo-caption">
+              <h5>The Throwback Duo 📸</h5>
+              <p>Recreating the legendary school desk days years later!</p>
+            </div>
+          </div>
+
+          
+          <!-- ============================================================== -->
+          <!-- 📸 PHOTO SLOT 6 (1:1 SQUARE)                                  -->
+          <!-- FILE: assets/photos/photo6.jpg                                 -->
+          <!-- ============================================================== -->
+          <div class="photo-card" id="photo-slot-6">
+            <div class="photo-tape"></div>
+            <div class="square-frame">
+              <img id="photo-img-6" src="assets/photos/photo5.jpg" alt="The Icon" />
+            </div>
+            <div class="photo-caption">
+              <!-- ✍️ EDIT PHOTO 6 TITLE & TEXT HERE -->
+              <h5>Certified Legend Status 🌟</h5>
+              <p>The blueprint for how to live life to the absolute fullest.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- VERTICAL PHONE VIDEO THEATER (9:16 FORMAT)                     -->
+    <!-- ============================================================== -->
+    <section id="videos-section" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Vertical Video Player (9:16)</span>
+          <h2 class="section-title">The Phone Video Vault</h2>
+          <p class="section-desc">
+            Designed specifically for smartphone recordings in native 9:16 vertical ratio. 
+            Drop your video files into <code>assets/videos/</code> or click to play!
+          </p>
+        </div>
+
+        <div class="videos-grid">
+
+          <!-- ============================================================== -->
+          <!-- 📱 VIDEO SLOT 1 (VERTICAL PHONE 9:16)                          -->
+          <!-- FILE: assets/videos/video1.mp4                                 -->
+          <!-- ============================================================== -->
+          <div class="phone-mockup" id="video-slot-1">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <!-- If video1.mp4 exists, it loads. Poster is shown by default -->
+              <video id="phone-video-1" playsinline loop muted controls preload="metadata" poster="assets/videos/poster1.svg" src="assets/videos/video1.mp4" onerror="this.removeAttribute('src');">
+              </video>
+            </div>
+            <div class="phone-meta">
+              <h4 class="phone-title">Volleyball Court Circle 🏐</h4>
+              <p class="phone-desc">Live from the court — team in the background, pure volleyball energy</p>
+            </div>
+          </div>
+
+          <!-- ============================================================== -->
+          <!-- 📱 VIDEO SLOT 2 (VERTICAL PHONE 9:16)                          -->
+          <!-- FILE: assets/videos/video2.mp4                                 -->
+          <!-- ============================================================== -->
+          <div class="phone-mockup" id="video-slot-2">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <video id="phone-video-2" playsinline loop muted controls preload="metadata" poster="assets/videos/poster2.svg" src="assets/videos/video2.mp4" onerror="this.removeAttribute('src');">
+              </video>
+            </div>
+            <div class="phone-meta">
+              <h4 class="phone-title">Bleachers Banter 💬</h4>
+              <p class="phone-desc">Post-practice laughs and hair checks with the best teammate</p>
+            </div>
+          </div>
+
+          <!-- ============================================================== -->
+          <!-- 📱 VIDEO SLOT 3 (VERTICAL PHONE 9:16)                          -->
+          <!-- FILE: assets/videos/video3.mp4                                 -->
+          <!-- ============================================================== -->
+          <div class="phone-mockup" id="video-slot-3">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <video id="phone-video-3" playsinline loop muted controls preload="metadata" poster="assets/videos/poster3.svg" src="assets/videos/video3.mp4" onerror="this.removeAttribute('src');">
+              </video>
+            </div>
+            <div class="phone-meta">
+              <!-- ✍️ EDIT VIDEO 3 TITLE & DESC HERE -->
+              <h4 class="phone-title">Office & Campus Chaos ✨</h4>
+              <p class="phone-desc">Behind the scenes moments that made the days fly by</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- KBTU ADMISSIONS "CLASSIFIED DOSSIER" (Subtle Inside-Joke)      -->
+    <!-- ============================================================== -->
+    <section id="dossier-section" class="section" style="background: rgba(255, 240, 245, 0.7);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Restricted Personnel File</span>
+          <h2 class="section-title">Classified Admissions Archive</h2>
+          <p class="section-desc">
+            A small declassified dossier from our days in the admissions office.
+          </p>
+        </div>
+
+        <div class="dossier-wrapper">
+          <div class="dossier-banner">
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <span style="font-size: 1.2rem;">🏛️</span>
+              <strong>DEPARTMENT ARCHIVE // KBTU ADMISSIONS</strong>
+            </div>
+            <span class="dossier-stamp" id="dossier-stamp-badge">RESTRICTED</span>
+          </div>
+
+          <div class="dossier-content">
+            <div class="dossier-watermark">CONFIDENTIAL</div>
+
+            <div class="dossier-grid">
+              <div class="dossier-item">
+                <div class="dossier-label">Operative Name</div>
+                <div class="dossier-val">Amelie</div>
+              </div>
+
+              <div class="dossier-item">
+                <div class="dossier-label">Department</div>
+                <div class="dossier-val">Admissions & Student Recruitment</div>
+              </div>
+
+              <div class="dossier-item">
+                <div class="dossier-label">Special Skills</div>
+                <div class="dossier-val">Unmatched Charisma & Good Serves 🏐</div>
+              </div>
+
+              <div class="dossier-item">
+                <div class="dossier-label">Fuel Source</div>
+                <div class="dossier-val">Iced Jägermeister (-18°C) 🦌</div>
+              </div>
+            </div>
+
+            <div class="dossier-notes">
+              <h5>Field Agent Summary:</h5>
+              <p style="color: var(--text-muted); font-size: 0.95rem;">
+                <!-- ✍️ EDIT YOUR SUBTLE ADMISSIONS NOTE HERE IF YOU WISH -->
+                "Operative Amelie demonstrated exceptional multitasking under intense pressure: 
+                handling mountains of student paperwork by daylight, dominating the volleyball court by dusk, 
+                and being the absolute best colleague to share a drink and a laugh with after hours. 
+                Officially rated as: <strong>Irreplaceable</strong>."
+              </p>
+            </div>
+
+            <!-- Secret Details Hidden Until Declassified -->
+            <div id="dossier-secret-details" style="display: none; margin-bottom: 20px; animation: modalPop 0.3s ease;">
+              <div style="background: white; border: 2px solid #86efac; border-radius: 12px; padding: 18px; text-align: center;">
+                <div style="font-size: 2rem; margin-bottom: 6px;">🏅</div>
+                <h4 style="color: #15803d; font-size: 1.15rem; font-weight: 800;">Official Certificate of Admission</h4>
+                <p style="color: #374151; font-size: 0.9rem; margin-top: 4px;">
+                  Amelie is hereby permanently admitted to the <strong>Hall of Legendary Friends</strong> 
+                  with honors in volleyball, party curation, and making hard work fun.
+                </p>
+              </div>
+            </div>
+
+            <div class="dossier-action-row">
+              <button class="btn btn-primary" id="declassify-btn">
+                <span>🔓</span> Declassify Confidential Record
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SCRATCH-OFF MYSTERY CARD (Interactive Scratch Canvas)          -->
+    <!-- ============================================================== -->
+    <section id="scratch-section" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Interactive Surprise</span>
+          <h2 class="section-title">Scratch to Reveal Amelie's Note</h2>
+          <p class="section-desc">
+            Use your mouse or finger to scratch off the pink sparkle layer!
+          </p>
+        </div>
+
+        <div class="scratch-container">
+          <div class="scratch-card">
+            <!-- Hidden Message Revealed Underneath -->
+            <div class="scratch-hidden-content">
+              <div style="font-size: 2rem; margin-bottom: 6px;">💖</div>
+              <!-- ✍️ EDIT YOUR PERSONAL MESSAGE TO AMELIE HERE -->
+              <h3>To Amelie, The Best Teammate!</h3>
+              <p>
+                "Whether we were navigating admissions chaos or toasting with iced Jäger, 
+                you've always brought the highest energy and biggest smiles. 
+                Keep spiking high and never stop being amazing!"
+              </p>
+              <div style="margin-top: 12px; font-weight: 800; color: var(--pink-600); font-size: 0.95rem;">
+                — Your KBTU Partner in Crime ✨
+              </div>
+            </div>
+
+            <!-- Canvas that gets scratched away -->
+            <canvas id="scratch-card-canvas" class="scratch-canvas"></canvas>
+          </div>
+          <p class="scratch-hint">💡 Rub / drag back and forth across the card to clear the glitter</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- MINI SOUNDBOARD                                                -->
+    <!-- ============================================================== -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: 24px;">
+          <span class="section-tag">Interactive Audio Effects</span>
+          <h3 style="font-size: 1.5rem; font-family: var(--font-heading);">Amelie's Soundboard</h3>
+        </div>
+
+        <div class="soundboard-grid">
+          <button class="sound-btn" onclick="playSampleSound('spike')">
+            <span>🏐</span> Volleyball Serve
+          </button>
+          <button class="sound-btn" onclick="playSampleSound('cheers')">
+            <span>🥃</span> Jäger Toast Clink
+          </button>
+          <button class="sound-btn" onclick="playSampleSound('stamp')">
+            <span>📜</span> Admissions Stamp
+          </button>
+          <button class="sound-btn" onclick="playSampleSound('fanfare')">
+            <span>🎉</span> Victory Cheer
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================== -->
+  <!-- MODAL / LIGHTBOX (FULL-SCREEN PHOTO & VIDEO VIEWER)            -->
+  <!-- ============================================================== -->
+  <div class="modal-overlay" id="media-modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close-btn" title="Close preview">✕</button>
+      <div class="modal-media-holder" id="modal-media-holder">
+        <!-- Expanded photo or video loads dynamically here -->
+      </div>
+      <div class="modal-caption" id="modal-caption-text"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">
+        Crafted with 💖, iced Jägermeister 🦌, and endless appreciation for Amelie.
+      </p>
+      <p class="footer-sub">
+        Pink & White Edition • Built with pure vanilla web magic (No build steps needed!)
+      </p>
+    </div>
+  </footer>
+
+  <!-- Script Engine -->
+  <script src="script.js"></script>
+</body>
+</html>

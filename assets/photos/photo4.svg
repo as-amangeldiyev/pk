@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf2f8"/>
+      <stop offset="100%" stop-color="#fbcfe8"/>
+    </linearGradient>
+  </defs>
+  <rect width="500" height="500" fill="url(#bg4)"/>
+  <circle cx="250" cy="210" r="90" fill="#f43f5e" opacity="0.15"/>
+  <!-- Sunglasses & camera icon -->
+  <text x="250" y="240" font-family="sans-serif" font-size="80" text-anchor="middle">📸</text>
+  <text x="250" y="390" font-family="-apple-system, sans-serif" font-weight="900" font-size="28" fill="#e11d48" text-anchor="middle">GOLDEN HOUR 💖</text>
+  <text x="250" y="425" font-family="-apple-system, sans-serif" font-weight="600" font-size="16" fill="#7c6270" text-anchor="middle">Replace with assets/photos/photo4.jpg</text>
+</svg>
